@@ -9,7 +9,7 @@ int main() {
     
     file = fopen("mesto za path", "r");
     if(file == NULL) {
-        printf("An error occurred while trying to reading treta.txt");
+        printf("An error occurred while trying to read treta.txt");
         return 1;
     }
     while((intValue_char= fgetc(file)) != EOF)
