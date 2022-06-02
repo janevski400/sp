@@ -4,6 +4,12 @@ int main() {
     FILE *source, *destination;
     source = fopen("mesto za path", "r");
     destination = fopen("mesto za path", "w");
+    
+    if(source == NULL || destination == NULL) {
+        printf("Error while opening files.");
+        return 1;
+    }
+
     int intValue_char;
     int offset = 1;
     do {
